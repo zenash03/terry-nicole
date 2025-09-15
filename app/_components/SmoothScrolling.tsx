@@ -24,9 +24,11 @@ function SmoothScrolling({ children }: { children: React.ReactNode }) {
     })
   
     return (
-        <ReactLenis  root ref={lenisRef}>
-            {children}
-        </ReactLenis>
+        <html>
+            <body>
+                { children}
+            </body>
+        </html>
     );
 }
 

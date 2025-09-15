@@ -1,13 +1,19 @@
-import config from '@/sanity/config/client-config';
-import { client } from '@/sanity/lib/client';
-import { getPhotoGalleryQuery } from '@/sanity/lib/queries';
-import { getPhotos } from '@/sanity/sanity-utils';
-import urlBuilder from '@sanity/image-url';
 import React from 'react'
+import SmoothScrolling from './_components/SmoothScrolling'
+import Header from './_components/Header'
+import HeroSection from '@/components/HeroSection'
+import AboutSection from '@/components/AboutSection'
 
 export default function Home() {
   return (
     <div>
+      <SmoothScrolling>
+
+        <Header />
+        <HeroSection />  
+        <AboutSection />      
+
+      </SmoothScrolling>
       {/* {
         getPhotos().then(photos => (
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: '16px' }}>
