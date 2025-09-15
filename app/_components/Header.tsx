@@ -14,8 +14,8 @@ export default function Header({}: Props) {
       </div>
       <div className="flex-1 flex justify-end items-center gap-4">
         <nav className="px-10 flex gap-8 my-4 md:my-0">
-        <a href="#gallery">Gallery</a>
         <a href="#about">About</a>
+        <a href="#gallery">Gallery</a>
         <a href="#services">Services</a>
         <a href="#contact">Contact</a>
         </nav>

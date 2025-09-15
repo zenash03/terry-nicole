@@ -6,10 +6,10 @@ type Props = {}
 
 export default function HeroSection({}: Props) {
   return (
-    <div className="max-w-[90rem] mx-auto py-16 h-screen">
+    <div className="max-w-[90rem] mx-auto py-16 min-h-full">
         <div className="grid grid-cols-2 gap-4">
             <div>
-                <div className="w-full h-[80vh] relative flex justify-end">
+                <div className="w-full h-full relative flex justify-end">
                     <div className="w-2/3 aspect-[3/4] rounded-tr-full rounded-tl-full bg-gray-400 relative">
                         <div className="w-20 h-20 rounded-full bg-red-400 absolute -top-4 -right-4"></div>
                         <div className="w-40 h-10 rounded-lg bg-red-400 absolute -bottom-0 translate-y-1/2 left-1/4 -translate-x-1/2"></div>

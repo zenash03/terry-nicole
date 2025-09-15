@@ -3,15 +3,19 @@ import SmoothScrolling from './_components/SmoothScrolling'
 import Header from './_components/Header'
 import HeroSection from '@/components/HeroSection'
 import AboutSection from '@/components/AboutSection'
+import GallerySection from '@/components/GallerySection'
 
 export default function Home() {
   return (
     <div>
       <SmoothScrolling>
-
-        <Header />
-        <HeroSection />  
-        <AboutSection />      
+        <div className="overflow-x-hidden">
+          <Header />
+          <HeroSection />  
+          <AboutSection />    
+          <GallerySection />  
+          <AboutSection />
+        </div>
 
       </SmoothScrolling>
       {/* {

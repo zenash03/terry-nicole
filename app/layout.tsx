@@ -29,8 +29,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <SmoothScrolling>
-      {children}
-    </SmoothScrolling>
+    <html lang="en">
+        <body className={`${lora.variable} ${roboto.variable} font-body text-slate-900`}>
+
+        {children}
+      </body>
+    </html>
   );
 }
