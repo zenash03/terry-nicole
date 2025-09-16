@@ -4,6 +4,7 @@ import Header from './_components/Header'
 import HeroSection from '@/components/HeroSection'
 import AboutSection from '@/components/AboutSection'
 import GallerySection from '@/components/GallerySection'
+import ServiceSection from '@/components/ServiceSection'
 
 export default function Home() {
   return (
@@ -15,6 +16,7 @@ export default function Home() {
           <AboutSection />    
           <GallerySection />  
           <AboutSection />
+          <ServiceSection />
         </div>
 
       </SmoothScrolling>

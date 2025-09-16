@@ -19,22 +19,22 @@ export default function GallerySection() {
     const totalScrollWidth = galleryItems.scrollWidth - gallery.offsetWidth
 
     const tween = gsap.fromTo(
-        galleryItems,
-        { x: 2000 },
-        {
-            x: -totalScrollWidth -500,
-            ease: 'none',
-            scrollTrigger: {
-                trigger: gallery,
-                start: 'top top',
-                end: () => `+=${totalScrollWidth}`,
-                scrub: true,
-                pin: true,
-                anticipatePin: 1,
-                invalidateOnRefresh: true,
-            },
-        }
-    );
+      galleryItems,
+      { x: 2000 },
+      {
+        x: -totalScrollWidth - 500,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: gallery,
+          start: 'top top',
+          end: () => `+=${totalScrollWidth}`,
+          scrub: true,
+          pin: true,
+          anticipatePin: 1,
+          invalidateOnRefresh: true,
+        },
+      }
+    )
 
     return () => {
       tween.scrollTrigger?.kill()
@@ -44,18 +44,24 @@ export default function GallerySection() {
 
   return (
     <div
-      className="w-full h-screen p-20 -rotate-3 bg-white overflow-hidden hide-scrollbar"
-      ref={galleryRef}
-    >
-      <div className="gallery-items flex flex-nowrap gap-8">
-        <div className="flex-shrink-0 w-96 h-96 bg-slate-200"></div>
-        <div className="flex-shrink-0 w-96 h-96 bg-slate-300"></div>
-        <div className="flex-shrink-0 w-96 h-96 bg-slate-400"></div>
-        <div className="flex-shrink-0 w-96 h-96 bg-slate-500"></div>
-        <div className="flex-shrink-0 w-96 h-96 bg-slate-600"></div>
-        <div className="flex-shrink-0 w-96 h-96 bg-slate-700"></div>
-        <div className="flex-shrink-0 w-96 h-96 bg-slate-800"></div>
-      </div>
-    </div>
+  className="relative w-full h-screen p-20 -rotate-3 bg-white overflow-hidden hide-scrollbar"
+  ref={galleryRef}
+>
+  {/* Title inside pinned area */}
+  <h2 className="absolute top-10 left-1/2 -translate-x-1/2 text-4xl font-bold z-10">
+    Our Gallery
+  </h2>
+
+  <div className="gallery-items flex flex-nowrap gap-8 mt-24">
+    <div className="flex-shrink-0 w-96 h-96 bg-slate-200"></div>
+    <div className="flex-shrink-0 w-96 h-96 bg-slate-300"></div>
+    <div className="flex-shrink-0 w-96 h-96 bg-slate-400"></div>
+    <div className="flex-shrink-0 w-96 h-96 bg-slate-500"></div>
+    <div className="flex-shrink-0 w-96 h-96 bg-slate-600"></div>
+    <div className="flex-shrink-0 w-96 h-96 bg-slate-700"></div>
+    <div className="flex-shrink-0 w-96 h-96 bg-slate-800"></div>
+  </div>
+</div>
+
   )
 }
