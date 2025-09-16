@@ -47,9 +47,8 @@ export default function GallerySection() {
   className="relative w-full h-screen p-20 -rotate-3 bg-white overflow-hidden hide-scrollbar"
   ref={galleryRef}
 >
-  {/* Title inside pinned area */}
-  <h2 className="absolute top-10 left-1/2 -translate-x-1/2 text-4xl font-bold z-10">
-    Our Gallery
+  <h2 className="absolute top-10 left-1/2 -translate-x-1/2 text-4xl font-heading text-slate-700 font-bold z-10">
+    My Gallery
   </h2>
 
   <div className="gallery-items flex flex-nowrap gap-8 mt-24">

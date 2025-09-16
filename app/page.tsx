@@ -5,6 +5,7 @@ import HeroSection from '@/components/HeroSection'
 import AboutSection from '@/components/AboutSection'
 import GallerySection from '@/components/GallerySection'
 import ServiceSection from '@/components/ServiceSection'
+import ContactSection from '@/components/ContactSection'
 
 export default function Home() {
   return (
@@ -15,8 +16,8 @@ export default function Home() {
           <HeroSection />  
           <AboutSection />    
           <GallerySection />  
-          <AboutSection />
           <ServiceSection />
+          <ContactSection />
         </div>
 
       </SmoothScrolling>
