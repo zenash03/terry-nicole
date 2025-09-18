@@ -66,7 +66,7 @@ export default function ServiceSection({}: Props) {
                         {/* Right column: center 1 card */}
                         <div className="flex flex-col justify-center">
                             <div className="flex flex-col items-center text-center w-full max-w-xs bg-white rounded-2xl shadow-md border border-gray-100 p-6 hover:scale-105 hover:border-blue-400 hover:shadow-xl transition-all duration-300">
-                                <div className="w-20 h-20 flex items-center justify-center rounded-full bg-gradient-to-tr from-gray-100 to-blue-50 mb-4 shadow">
+                                <div className="w-20 h-20 flex items-center justify-center rounded-full">
                                 <HighDefinitionIcon size={64} weight="duotone" className="text-green-500" />
                                 </div>
                                 <h3 className="text-lg font-semibold mb-1 text-gray-900">Editing</h3>
